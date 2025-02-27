@@ -2,8 +2,8 @@
 
 -- Test:
 -- CALL sp_GetProductDetails(1);
--- CALL SET @new_product_id = 0; sp_InsertProduct('1-1/2" Schedule 80 PVC Pipe', 'High quality PVC for plumbing', 3.99, 'sku:8008-015AB-5', 4.2, 4.5, @new_product_id); SELECT @new_product_id;
--- CALL SET @new_offer_id = 0; sp_InsertOffer(1, 3.49, 'USD', '2025-12-31', @new_offer_id); SELECT @new_offer_id;
+-- SET @new_product_id = 0; CALL sp_InsertProduct('1-1/2" Schedule 80 PVC Pipe', 'High quality PVC for plumbing', 3.99, 'sku:8008-015AB-5', 4.2, 4.5, @new_product_id); SELECT @new_product_id;
+-- SET @new_offer_id = 0; CALL sp_InsertOffer(1, 3.49, 'USD', '2025-12-31', @new_offer_id); SELECT @new_offer_id;
 
 DELIMITER $$
 
